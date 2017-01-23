@@ -19,3 +19,9 @@ mvn install:install-file -Dfile=./vim25.jar -DgroupId=com.vmware -DartifactId=vi
 
 ## Running the code
 mvn test -DargLine="-Dvc.host=127.0.0.1 -Dvc.username=administrator@vsphere.local -Dvc.password='password' -Dvc.vmname='VMware vCenter Server Appliance'"
+
+
+## Notes
+1. If you are running vSphere 6.5 or higher you dont need any of this.
+One of the new features in 6.5 is the vCenter REST API which natively
+offers a modernized programmatic interface to vCenter. See https://blogs.vmware.com/developer/2016/10/whats-new-developer-automation-interfaces-65.html
